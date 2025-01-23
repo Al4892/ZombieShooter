@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Inspector
   m_RootView: {fileID: 10}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -179,7 +179,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 100}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 91
+  controlID: 159
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -226,8 +226,8 @@ MonoBehaviour:
     y: 0
     width: 749
     height: 286
-  m_MinSize: {x: 101, y: 126}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -449,10 +449,9 @@ MonoBehaviour:
     m_FilterByTypeIntersection: 0
   m_ViewMode: 0
   m_StartGridSize: 64
-  m_LastFolders:
-  - Assets
+  m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Equipo 35\Videos\AlNoTocar\pruebaShotter
+  m_LastProjectPath: C:\Users\Equipo 35\Documents\Github\Al\ZombieShooter\pruebaShotter
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
@@ -1212,9 +1211,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 0.4296674, y: 0.56120336, z: -4.9930086}
+    m_Target: {x: -0.16158685, y: 0.59560204, z: -3.7019718}
     speed: 2
-    m_Value: {x: 0.4296674, y: 0.56120336, z: -4.9930086}
+    m_Value: {x: -0.16158685, y: 0.59560204, z: -3.7019718}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1260,9 +1259,9 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.40843385, y: 0.12240811, z: -0.05531632, w: -0.90288895}
+    m_Target: {x: 0.22079249, y: -0.2825781, z: 0.06695858, w: 0.9311257}
     speed: 2
-    m_Value: {x: -0.40833607, y: 0.12375795, z: -0.055926945, w: -0.9026726}
+    m_Value: {x: 0.22078386, y: -0.28256705, z: 0.06695596, w: 0.9310893}
   m_Size:
     m_Target: 1.4066795
     speed: 2

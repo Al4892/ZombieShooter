@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Rotate : MonoBehaviour
@@ -6,25 +7,26 @@ public class Rotate : MonoBehaviour
 [SerializeField]
  private float _rotateSpeed= 0;
 [SerializeField]
-private float _RotateUpdown=0;
+private bool _isRotatting=true;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+ public bool IsRotatting
+ {
+    get{return _isRotatting;}
+    set{_isRotatting= value;}
+ }
+       void Update()
     {
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        gameObject.transform.Rotate(0f,_rotateSpeed+ Time.deltaTime,0f);
-
-        gameObject.transform.Rotate(_RotateUpdown+Time.deltaTime,0f,0f);
-        new WaitForSeconds(2f);
-        gameObject.transform.Rotate(_RotateUpdown-Time.deltaTime,0f,0f);
-        new WaitForSeconds(2f);
+       Rotates();
 
 
         
+    }
+    private void Rotates()
+    {
+        if(_isRotatting)
+        {
+            gameObject.transform.Rotate(0f,_rotateSpeed+ Time.deltaTime,0f);
+        }
     }
 }
