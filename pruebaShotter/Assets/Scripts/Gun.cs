@@ -32,6 +32,7 @@ private GetWeapon _getWeapon;
             return;
 
         }
+        SoundManager.instance.Play("Shoot");
         _WeaponAnimator.Play("Shooots",-1,0f);
         GameObject.Instantiate(_bullet,_bulletPivot.position,_bulletPivot.rotation);
         _CurrentbulletNumber--;

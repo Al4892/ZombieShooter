@@ -7,6 +7,13 @@ public class BUllet : MonoBehaviour
    [SerializeField]
    private float _bulletSpeed;
 
+   [SerializeField]
+   private int _damage;
+   public int damage
+   {
+      get {return _damage;}
+   }
+
    private void OnEnable()
    {
      if(_riggidboddy==null)
