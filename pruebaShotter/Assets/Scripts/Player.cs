@@ -1,5 +1,7 @@
 
 using UnityEngine;
+using UnityEngine.Audio;
+
 
 public class Player : MonoBehaviour
 {
@@ -7,6 +9,8 @@ public class Player : MonoBehaviour
     private UiController _uiController;
     private bool _isPlaying=true;
     private Enemy _enemy;
+    [SerializeField]
+    private AudioClip _Lost;
     
     void Start()
     {
@@ -32,6 +36,10 @@ public class Player : MonoBehaviour
     public void Die()
     {
         _uiController.ShowGameOverUI(true);
+        SoundManager.instance.Play("Sonicx");
+        
+
+        
     }
     public void win()
     {

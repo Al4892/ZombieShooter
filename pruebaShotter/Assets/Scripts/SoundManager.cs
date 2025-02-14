@@ -15,15 +15,17 @@ public class SoundManager : MonoBehaviour
     Dictionary<string,AudioClip> audioDictionary;
     void Awake()
     {
-        if(instance == null){
+        if(instance == null)
+        {
             instance = this;
-        }else if(instance != this){
+        }
+        else if(instance != this)
+        {
             Destroy(gameObject);
         }
-        DontDestroyOnLoad(gameObject);
+         DontDestroyOnLoad(gameObject);
 
-        
-         audioDictionary = new Dictionary<string,AudioClip>();
+                 audioDictionary = new Dictionary<string,AudioClip>();
          foreach(string key in audioList){
             AudioClip audio = Resources.Load<AudioClip>("Audio/" + audioPrefix + key); 
             audioDictionary.Add(key,audio);
