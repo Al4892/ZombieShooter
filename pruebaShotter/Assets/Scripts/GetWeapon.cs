@@ -39,6 +39,7 @@ public class GetWeapon : MonoBehaviour
         _weapon= Weapon.GetComponent<Gun>();
         _weapon.PickupWeapon(this);
         _Uicontroller.ShowBulletsUi(true);
+        _Uicontroller.ShowCrossHair(true);
        
 
 
@@ -48,6 +49,7 @@ public class GetWeapon : MonoBehaviour
         Destroy(_weapon.gameObject);
         _weapon=null;
         _Uicontroller.ShowBulletsUi(false);
+        _Uicontroller.ShowCrossHair(false);
       
 
     }

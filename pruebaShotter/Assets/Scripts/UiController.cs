@@ -10,6 +10,7 @@ public class UiController : MonoBehaviour
     private Text _BulletsUi;
     [SerializeField]
     private Text _BulletsText;
+    
     public Text BulletsText
     {
       get{return _BulletsText; }
@@ -20,6 +21,9 @@ public class UiController : MonoBehaviour
   private GameObject _gameOverUi;
   [SerializeField]
   private GameObject _gameWinUi;
+   [SerializeField]
+  private GameObject _CrossHair;
+
 
   
  public void ShowBulletsUi(bool show)
@@ -37,10 +41,15 @@ public class UiController : MonoBehaviour
    _gameWinUi.SetActive(show);
 
  }
+ public void ShowCrossHair(bool show)
+ {
+  _CrossHair.SetActive(show);
+ }
  public void Start()
  {
    ShowBulletsUi(false);
     ShowGameOverUI(false);
     ShowGameWinUI(false);
+    ShowCrossHair(false);
  }
 }
