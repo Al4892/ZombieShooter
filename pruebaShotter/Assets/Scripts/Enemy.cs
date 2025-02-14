@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour
     private float _speed= 1f;
     private Transform _Objective;
     private Health _health;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    
     void Start()
     {
         _Objective=GameObject.FindGameObjectWithTag(_EnemytoLock).transform;
