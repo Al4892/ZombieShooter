@@ -73,6 +73,7 @@ private GetWeapon _getWeapon;
         _TotalBulletsNumber -= _CurrentbulletNumber;
         UpdateBulletText();
         _WeaponAnimator.Play("Reload");
+        SoundManager.instance.Play("Reload");
 
     }
     private void UpdateBulletText()

@@ -3,19 +3,23 @@ using UnityEngine;
 using UnityEngine.Audio;
 
 
+
+
 public class Player : MonoBehaviour
 {
     private Health _health;
     private UiController _uiController;
     private bool _isPlaying=true;
     private Enemy _enemy;
+    public int Cantidad;
     [SerializeField]
-    private AudioClip _Lost;
+ private GameObject _win;
     
     void Start()
     {
         _health=GetComponent<Health>();
         _uiController=GetComponent<UiController>();
+        SoundManager.instance.PlayMusic("Skyrim");
     }
      private void OnCollisionEnter(Collision collision)
     {
@@ -37,9 +41,7 @@ public class Player : MonoBehaviour
     {
         _uiController.ShowGameOverUI(true);
         SoundManager.instance.Play("Sonicx");
-        
-
-        
+                    
     }
     public void win()
     {
@@ -50,6 +52,10 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       Cantidad = GameObject.FindGameObjectsWithTag("Enemy").Length;
+       if(Cantidad<=0)
+       {
+        _win.SetActive(true);
+       }
     }
 }

@@ -23,11 +23,15 @@ public class Enemy : MonoBehaviour
         {
             _health.TakeDamage(collision.gameObject.GetComponent<BUllet>().damage);
             Destroy(collision.gameObject);
+            SoundManager.instance.Play("Hit");
+           
+
         }
     }
     public void Die()
     {
         Destroy(gameObject);
+        SoundManager.instance.Play("Exp");
     }
 
     // Update is called once per frame
