@@ -41,11 +41,19 @@ public class Player : MonoBehaviour
     {
         _uiController.ShowGameOverUI(true);
         SoundManager.instance.Play("Sonicx");
+        _isPlaying=false;
+
                     
     }
     public void win()
     {
         _uiController.ShowGameWinUI(true);
+        
+        _uiController.ShowBulletsUi(false);
+        _uiController.ShowCrossHair(false);
+
+
+        
     }
     
 
